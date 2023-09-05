@@ -1,1 +1,19 @@
+site_name: IKIM Cluster
+site_url: https://k87rte.github.io/clusterDocs/
 
+theme:
+  name: material
+  features:
+    - navigation.sections
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+
+nav:
+  - Introduction: index.md
+  - User Guide:
+     - FreeSurfer: index_freesurfer.md
