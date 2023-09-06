@@ -4,7 +4,7 @@ title: Your Documentation Title
 description: Your documentation description
 url: https://k87rte.github.io/clusterDocs
 
-theme: jekyll-theme-material
+#theme: jekyll-theme-material
 
 markdown: kramdown
 kramdown:
