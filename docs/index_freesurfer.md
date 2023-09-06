@@ -8,7 +8,7 @@ Documentation on apptainer/sandbox is made available at: https://ikim-essen.gith
 Let us get started with setting up the required things to run FreeSurfer.
 
 ### Get the sandbox
-Instead of building a singularity container, we build a sandbox here, so that we can use fakeroot to make changes inside the /usr/local/freesurfer folder, location where it is available in usually all FreeSurfer containers. Otherwise, with the '.sif', we will not have those previlages. 
+Instead of building a singularity container, we build a sandbox here, so that we can use fakeroot to make changes inside the /usr/local/freesurfer folder, location where it is available in usually all FreeSurfer containers. Otherwise, with the '.sif', we will not have those previlages. You can find the containers at https://hub.docker.com/. 
 
 In /groups/pni/ create a directory e.g., hpc-containers: 
 ```sh
