@@ -1,18 +1,35 @@
-site_name: test
-site_url: https://k87rte.github.io/clusterDocs/
+# _config.yml
 
-theme:
-  name: material
-  features:
-    - navigation.sections
+title: Your Documentation Title
+description: Your documentation description
+url: https://k87rte.github.io/clusterDocs
 
-markdown_extensions:
-  - footnotes
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.superfences
-  - pymdownx.snippets
+theme: jekyll-theme-material
 
-nav:
-  - Introduction: docs/index.md
-  - FreeSurfer: docs/index_freesurfer.md
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+collections:
+  docs:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: single
+      author_profile: false
+
+plugins:
+  - jekyll-redirect-from
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - _site
+  - .github
