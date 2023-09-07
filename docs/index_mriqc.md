@@ -49,8 +49,14 @@ singularity exec $CONTAINER mriqc \
 Please note that here, I simply use the already avaialbe container i.e., /groups/pni/sandboxes/mriqc_v22.0.6.sif Change it if you want.
 
 ## Send the script to cluster with sbatch
+- It is important to note that you should execute the below script from a directory away from the BIDS_dir, e.g., from outside study-A1xxxx. One reason is that MRIQC creates a folder called _work_, inside the workdir (directory from where you execute scripts). I recommend that the workdir is something like **/group/pni/username/temp_submission**. In that case, we do not pollute the other directories. 
 ```sh
+cd /group/pni/username/temp_submission
 sbatch /path/to/script.sh study-A1xxxx sub-xxxx
+```
+You can also use something like:
+```sh
+sbatch --chdir=/path/to/your/working_directory your_mriqc_script.sh arg1 arg2
 ```
 
 Now, MRIQC will run on sub-xxxx present in study-A1xxxx on the cluster. Presently, each sub-xxxx will occupy 1/64 cores from 1 node/CPU.
