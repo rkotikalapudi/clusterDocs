@@ -1,10 +1,9 @@
-theme: jekyll-theme-minimal
+# Site settings
 
-collections:
-  freesurfer:
-    output: true
-    permalink: /freesurfer/
-  mriqc:
-    output: true
-    permalink: /mriqc/
+title: HPC cluster related data processing
+author: 
+  name: R.K.
+description: This is a wiki doc, for cluster related processing.
 
+# Build settings
+remote_theme: jekyll/minima
