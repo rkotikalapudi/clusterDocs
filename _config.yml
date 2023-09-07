@@ -3,7 +3,7 @@
 title: HPC cluster related data processing
 author: 
   name: R.K.
-description: This is a wiki doc, for cluster related processing.
+description: Cluster-based Neuroimage processing hints.
 
 # Build settings
 remote_theme: jekyll/minima
