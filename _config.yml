@@ -1,0 +1,9 @@
+theme: jekyll-theme-minimal
+
+collections:
+  freesurfer:
+    output: true
+    permalink: /freesurfer/:/docs/index_freesurfer.md
+  mriqc:
+    output: true
+    permalink: /mriqc/:/docs/index_mriqc.md
