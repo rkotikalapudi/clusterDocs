@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: post
 title: FreeSurfer via apptainer/sandbox
 ---
 
