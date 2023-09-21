@@ -29,7 +29,7 @@ Assuming the license.txt file is in the IKIM cluster:
 ```sh
 cp license.txt /groups/pni/hpc-containers/freesurfer_7.3.1/usr/local/freesurfer/
 ```
-
+**NOTE: When we tried freesurfer_6.0, we found that 'freesurfer' directory is present inside 'opt' folder rather than the 'usr/local' folder as shown above.**
 Now, the sandbox is ready with the FreeSurfer license.
 
 ### Make an .sh script 
